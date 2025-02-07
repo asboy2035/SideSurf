@@ -91,7 +91,7 @@ struct ContentView: View {
             }
             .frame(minWidth: 450)
             .background(.background.opacity(0.4))
-            .cornerRadius(8)
+            .cornerRadius(6)
             .padding(8)
         }
         .background(VisualEffectView(material: .sidebar, blendingMode: .behindWindow).edgesIgnoringSafeArea(.all))

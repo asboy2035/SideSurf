@@ -7,8 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E196F592D56731000AD4AC8 /* SideSurfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */; };
 		5EAD088A2D56554000944328 /* Luminare in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD08892D56554000944328 /* Luminare */; };
 		5EAD098C2D566AD800944328 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD098B2D566AD800944328 /* LaunchAtLogin */; };
+		5EAD09C72D5671C600944328 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5EAD09C02D5671C600944328 /* Localizable.xcstrings */; };
+		5EAD09C82D5671C600944328 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EAD09BA2D5671C600944328 /* Assets.xcassets */; };
+		5EAD09C92D5671C600944328 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EAD09B62D5671C600944328 /* Preview Assets.xcassets */; };
+		5EAD09CA2D5671C600944328 /* AboutWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09B82D5671C600944328 /* AboutWindowController.swift */; };
+		5EAD09CB2D5671C600944328 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09BD2D5671C600944328 /* ContentView.swift */; };
+		5EAD09CC2D5671C600944328 /* BrowserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09BC2D5671C600944328 /* BrowserModel.swift */; };
+		5EAD09CD2D5671C600944328 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09BF2D5671C600944328 /* HistoryView.swift */; };
+		5EAD09CE2D5671C600944328 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09BB2D5671C600944328 /* Bookmark.swift */; };
+		5EAD09D02D5671C600944328 /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09C32D5671C600944328 /* VisualEffectView.swift */; };
+		5EAD09D12D5671C600944328 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09B92D5671C600944328 /* AppDelegate.swift */; };
+		5EAD09D22D5671C600944328 /* StartPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09C22D5671C600944328 /* StartPageView.swift */; };
+		5EAD09D32D5671C600944328 /* HistoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09BE2D5671C600944328 /* HistoryItem.swift */; };
+		5EAD09D42D5671C600944328 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD09C12D5671C600944328 /* SidebarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -17,40 +31,37 @@
 			containerPortal = 5EDE60B62D034D6900B723E1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5EDE60BD2D034D6900B723E1;
-			remoteInfo = WebSidebar;
+			remoteInfo = SideSurf;
 		};
 		5EDE60DA2D034D6B00B723E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5EDE60B62D034D6900B723E1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5EDE60BD2D034D6900B723E1;
-			remoteInfo = WebSidebar;
+			remoteInfo = SideSurf;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		5EDE60BE2D034D6900B723E1 /* WebSidebar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebSidebar.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EDE60CF2D034D6B00B723E1 /* WebSidebarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSidebarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EDE60D92D034D6B00B723E1 /* WebSidebarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebSidebarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E196F532D56725100AD4AC8 /* SideSurf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SideSurf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E196F542D56725100AD4AC8 /* SideSurfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideSurfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E196F552D56725100AD4AC8 /* SideSurfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideSurfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E196F572D5672F400AD4AC8 /* SideSurf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideSurf.entitlements; sourceTree = "<group>"; };
+		5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSurfApp.swift; sourceTree = "<group>"; };
+		5EAD09B62D5671C600944328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		5EAD09B82D5671C600944328 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
+		5EAD09B92D5671C600944328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EAD09BA2D5671C600944328 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EAD09BB2D5671C600944328 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
+		5EAD09BC2D5671C600944328 /* BrowserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserModel.swift; sourceTree = "<group>"; };
+		5EAD09BD2D5671C600944328 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5EAD09BE2D5671C600944328 /* HistoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryItem.swift; sourceTree = "<group>"; };
+		5EAD09BF2D5671C600944328 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		5EAD09C02D5671C600944328 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		5EAD09C12D5671C600944328 /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		5EAD09C22D5671C600944328 /* StartPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartPageView.swift; sourceTree = "<group>"; };
+		5EAD09C32D5671C600944328 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		5EDE60C02D034D6900B723E1 /* WebSidebar */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WebSidebar;
-			sourceTree = "<group>";
-		};
-		5EDE60D22D034D6B00B723E1 /* WebSidebarTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WebSidebarTests;
-			sourceTree = "<group>";
-		};
-		5EDE60DC2D034D6B00B723E1 /* WebSidebarUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = WebSidebarUITests;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		5EDE60BB2D034D6900B723E1 /* Frameworks */ = {
@@ -79,32 +90,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E196F562D5672D800AD4AC8 /* SideSurf */ = {
+			isa = PBXGroup;
+			children = (
+				5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */,
+				5E196F572D5672F400AD4AC8 /* SideSurf.entitlements */,
+				5EAD09B72D5671C600944328 /* Preview Content */,
+				5EAD09B82D5671C600944328 /* AboutWindowController.swift */,
+				5EAD09B92D5671C600944328 /* AppDelegate.swift */,
+				5EAD09BA2D5671C600944328 /* Assets.xcassets */,
+				5EAD09BB2D5671C600944328 /* Bookmark.swift */,
+				5EAD09BC2D5671C600944328 /* BrowserModel.swift */,
+				5EAD09BD2D5671C600944328 /* ContentView.swift */,
+				5EAD09BE2D5671C600944328 /* HistoryItem.swift */,
+				5EAD09BF2D5671C600944328 /* HistoryView.swift */,
+				5EAD09C02D5671C600944328 /* Localizable.xcstrings */,
+				5EAD09C12D5671C600944328 /* SidebarView.swift */,
+				5EAD09C22D5671C600944328 /* StartPageView.swift */,
+				5EAD09C32D5671C600944328 /* VisualEffectView.swift */,
+			);
+			path = SideSurf;
+			sourceTree = "<group>";
+		};
+		5EAD09B72D5671C600944328 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				5EAD09B62D5671C600944328 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 		5EDE60B52D034D6900B723E1 = {
 			isa = PBXGroup;
 			children = (
-				5EDE60C02D034D6900B723E1 /* WebSidebar */,
-				5EDE60D22D034D6B00B723E1 /* WebSidebarTests */,
-				5EDE60DC2D034D6B00B723E1 /* WebSidebarUITests */,
-				5EDE60BF2D034D6900B723E1 /* Products */,
+				5E196F562D5672D800AD4AC8 /* SideSurf */,
+				5E196F532D56725100AD4AC8 /* SideSurf.app */,
+				5E196F542D56725100AD4AC8 /* SideSurfTests.xctest */,
+				5E196F552D56725100AD4AC8 /* SideSurfUITests.xctest */,
 			);
-			sourceTree = "<group>";
-		};
-		5EDE60BF2D034D6900B723E1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5EDE60BE2D034D6900B723E1 /* WebSidebar.app */,
-				5EDE60CF2D034D6B00B723E1 /* WebSidebarTests.xctest */,
-				5EDE60D92D034D6B00B723E1 /* WebSidebarUITests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5EDE60BD2D034D6900B723E1 /* WebSidebar */ = {
+		5EDE60BD2D034D6900B723E1 /* SideSurf */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EDE60E32D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebar" */;
+			buildConfigurationList = 5EDE60E32D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurf" */;
 			buildPhases = (
 				5EDE60BA2D034D6900B723E1 /* Sources */,
 				5EDE60BB2D034D6900B723E1 /* Frameworks */,
@@ -114,21 +145,18 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				5EDE60C02D034D6900B723E1 /* WebSidebar */,
-			);
-			name = WebSidebar;
+			name = SideSurf;
 			packageProductDependencies = (
 				5EAD08892D56554000944328 /* Luminare */,
 				5EAD098B2D566AD800944328 /* LaunchAtLogin */,
 			);
-			productName = WebSidebar;
-			productReference = 5EDE60BE2D034D6900B723E1 /* WebSidebar.app */;
+			productName = SideSurf;
+			productReference = 5E196F532D56725100AD4AC8 /* SideSurf.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5EDE60CE2D034D6B00B723E1 /* WebSidebarTests */ = {
+		5EDE60CE2D034D6B00B723E1 /* SideSurfTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EDE60E62D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebarTests" */;
+			buildConfigurationList = 5EDE60E62D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurfTests" */;
 			buildPhases = (
 				5EDE60CB2D034D6B00B723E1 /* Sources */,
 				5EDE60CC2D034D6B00B723E1 /* Frameworks */,
@@ -139,19 +167,16 @@
 			dependencies = (
 				5EDE60D12D034D6B00B723E1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				5EDE60D22D034D6B00B723E1 /* WebSidebarTests */,
-			);
-			name = WebSidebarTests;
+			name = SideSurfTests;
 			packageProductDependencies = (
 			);
-			productName = WebSidebarTests;
-			productReference = 5EDE60CF2D034D6B00B723E1 /* WebSidebarTests.xctest */;
+			productName = SideSurfTests;
+			productReference = 5E196F542D56725100AD4AC8 /* SideSurfTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5EDE60D82D034D6B00B723E1 /* WebSidebarUITests */ = {
+		5EDE60D82D034D6B00B723E1 /* SideSurfUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5EDE60E92D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebarUITests" */;
+			buildConfigurationList = 5EDE60E92D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurfUITests" */;
 			buildPhases = (
 				5EDE60D52D034D6B00B723E1 /* Sources */,
 				5EDE60D62D034D6B00B723E1 /* Frameworks */,
@@ -162,14 +187,11 @@
 			dependencies = (
 				5EDE60DB2D034D6B00B723E1 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				5EDE60DC2D034D6B00B723E1 /* WebSidebarUITests */,
-			);
-			name = WebSidebarUITests;
+			name = SideSurfUITests;
 			packageProductDependencies = (
 			);
-			productName = WebSidebarUITests;
-			productReference = 5EDE60D92D034D6B00B723E1 /* WebSidebarUITests.xctest */;
+			productName = SideSurfUITests;
+			productReference = 5E196F552D56725100AD4AC8 /* SideSurfUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -195,7 +217,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5EDE60B92D034D6900B723E1 /* Build configuration list for PBXProject "WebSidebar" */;
+			buildConfigurationList = 5EDE60B92D034D6900B723E1 /* Build configuration list for PBXProject "SideSurf" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -209,13 +231,13 @@
 				5EAD098A2D566AD800944328 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
 			);
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 5EDE60BF2D034D6900B723E1 /* Products */;
+			productRefGroup = 5EDE60B52D034D6900B723E1;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5EDE60BD2D034D6900B723E1 /* WebSidebar */,
-				5EDE60CE2D034D6B00B723E1 /* WebSidebarTests */,
-				5EDE60D82D034D6B00B723E1 /* WebSidebarUITests */,
+				5EDE60BD2D034D6900B723E1 /* SideSurf */,
+				5EDE60CE2D034D6B00B723E1 /* SideSurfTests */,
+				5EDE60D82D034D6B00B723E1 /* SideSurfUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +247,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EAD09C72D5671C600944328 /* Localizable.xcstrings in Resources */,
+				5EAD09C82D5671C600944328 /* Assets.xcassets in Resources */,
+				5EAD09C92D5671C600944328 /* Preview Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +274,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EAD09CA2D5671C600944328 /* AboutWindowController.swift in Sources */,
+				5EAD09CB2D5671C600944328 /* ContentView.swift in Sources */,
+				5EAD09CC2D5671C600944328 /* BrowserModel.swift in Sources */,
+				5EAD09CD2D5671C600944328 /* HistoryView.swift in Sources */,
+				5EAD09CE2D5671C600944328 /* Bookmark.swift in Sources */,
+				5EAD09D02D5671C600944328 /* VisualEffectView.swift in Sources */,
+				5EAD09D12D5671C600944328 /* AppDelegate.swift in Sources */,
+				5E196F592D56731000AD4AC8 /* SideSurfApp.swift in Sources */,
+				5EAD09D22D5671C600944328 /* StartPageView.swift in Sources */,
+				5EAD09D32D5671C600944328 /* HistoryItem.swift in Sources */,
+				5EAD09D42D5671C600944328 /* SidebarView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,12 +307,12 @@
 /* Begin PBXTargetDependency section */
 		5EDE60D12D034D6B00B723E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EDE60BD2D034D6900B723E1 /* WebSidebar */;
+			target = 5EDE60BD2D034D6900B723E1 /* SideSurf */;
 			targetProxy = 5EDE60D02D034D6B00B723E1 /* PBXContainerItemProxy */;
 		};
 		5EDE60DB2D034D6B00B723E1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 5EDE60BD2D034D6900B723E1 /* WebSidebar */;
+			target = 5EDE60BD2D034D6900B723E1 /* SideSurf */;
 			targetProxy = 5EDE60DA2D034D6B00B723E1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -407,23 +443,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebSidebar/WebSidebar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SideSurf/SideSurf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WebSidebar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SideSurf/Preview Content\"";
 				DEVELOPMENT_TEAM = UCN29PZL3V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SideSurf;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurf;
+				PRODUCT_NAME = SideSurf;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -434,23 +473,26 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WebSidebar/WebSidebar.entitlements;
+				CODE_SIGN_ENTITLEMENTS = SideSurf/SideSurf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WebSidebar/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SideSurf/Preview Content\"";
 				DEVELOPMENT_TEAM = UCN29PZL3V;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SideSurf;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 13.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebar;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurf;
+				PRODUCT_NAME = SideSurf;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 			};
@@ -466,11 +508,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSidebar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebSidebar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideSurf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SideSurf";
 			};
 			name = Debug;
 		};
@@ -484,11 +526,11 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebarTests;
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurfTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WebSidebar.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WebSidebar";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SideSurf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SideSurf";
 			};
 			name = Release;
 		};
@@ -500,11 +542,11 @@
 				DEVELOPMENT_TEAM = UCN29PZL3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebarUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurfUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = WebSidebar;
+				TEST_TARGET_NAME = SideSurf;
 			};
 			name = Debug;
 		};
@@ -516,18 +558,18 @@
 				DEVELOPMENT_TEAM = UCN29PZL3V;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = ash.WebSidebarUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = ash.SideSurfUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = WebSidebar;
+				TEST_TARGET_NAME = SideSurf;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5EDE60B92D034D6900B723E1 /* Build configuration list for PBXProject "WebSidebar" */ = {
+		5EDE60B92D034D6900B723E1 /* Build configuration list for PBXProject "SideSurf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EDE60E12D034D6B00B723E1 /* Debug */,
@@ -536,7 +578,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EDE60E32D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebar" */ = {
+		5EDE60E32D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurf" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EDE60E42D034D6B00B723E1 /* Debug */,
@@ -545,7 +587,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EDE60E62D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebarTests" */ = {
+		5EDE60E62D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurfTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EDE60E72D034D6B00B723E1 /* Debug */,
@@ -554,7 +596,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5EDE60E92D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "WebSidebarUITests" */ = {
+		5EDE60E92D034D6B00B723E1 /* Build configuration list for PBXNativeTarget "SideSurfUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5EDE60EA2D034D6B00B723E1 /* Debug */,

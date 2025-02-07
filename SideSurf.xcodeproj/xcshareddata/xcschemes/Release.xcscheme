@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-               BuildableName = "WebSidebar.app"
-               BlueprintName = "WebSidebar"
-               ReferencedContainer = "container:WebSidebar.xcodeproj">
+               BuildableName = "SideSurf.app"
+               BlueprintName = "SideSurf"
+               ReferencedContainer = "container:SideSurf.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-            BuildableName = "WebSidebar.app"
-            BlueprintName = "WebSidebar"
-            ReferencedContainer = "container:WebSidebar.xcodeproj">
+            BuildableName = "SideSurf.app"
+            BlueprintName = "SideSurf"
+            ReferencedContainer = "container:SideSurf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-            BuildableName = "WebSidebar.app"
-            BlueprintName = "WebSidebar"
-            ReferencedContainer = "container:WebSidebar.xcodeproj">
+            BuildableName = "SideSurf.app"
+            BlueprintName = "SideSurf"
+            ReferencedContainer = "container:SideSurf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -22,21 +22,26 @@ struct SidebarView: View {
             TabBarView(browserModel: browserModel)
                 .padding([.horizontal, .bottom])
             
-            if let selectedTab = browserModel.selectedTab,
-               selectedTab.urlString == "about:startpage" {
-                StartPageView(
-                    browserModel: browserModel,
-                    bookmarkManager: bookmarkManager,
-                    historyManager: historyManager
-                )
-            } else {
-                WebView(
-                    browserModel: browserModel,
-                    historyManager: historyManager,
-                    preventReload: !isFirstLoad
-                )
-                .background(Color.clear)
+            VStack {
+                if let selectedTab = browserModel.selectedTab,
+                   selectedTab.urlString == "about:startpage" {
+                    StartPageView(
+                        browserModel: browserModel,
+                        bookmarkManager: bookmarkManager,
+                        historyManager: historyManager
+                    )
+                    .mask(RoundedRectangle(cornerRadius: 6))
+                } else {
+                    WebView(
+                        browserModel: browserModel,
+                        historyManager: historyManager,
+                        preventReload: !isFirstLoad
+                    )
+                    .mask(RoundedRectangle(cornerRadius: 6))
+                    .background(Color.clear)
+                }
             }
+            .padding(8)
         }
         .background(VisualEffectView(material: .sidebar, blendingMode: .behindWindow).edgesIgnoringSafeArea(.all))
     }
@@ -62,7 +67,6 @@ struct AddressBarView: View {
                 Image(systemName: "arrow.right.circle")
                     .foregroundColor(colorScheme == .dark ? .white : .accentColor)
                     .padding(.vertical, 6)
-                    .pointerStyle(.link)
             }
             .buttonStyle(PlainButtonStyle())
         }
@@ -84,7 +88,6 @@ struct TabBarView: View {
                     browserModel.addNewTab()
                 } label: {
                     Image(systemName: "plus")
-                        .pointerStyle(.link)
                         .foregroundColor(colorScheme == .dark ? .white : .accentColor)
                 }
                 .buttonStyle(PlainButtonStyle())

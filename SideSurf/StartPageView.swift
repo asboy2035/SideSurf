@@ -62,7 +62,6 @@ struct StartPageView: View {
             }
             .padding()
         }
-        .background(VisualEffectView(material: .hudWindow, blendingMode: .behindWindow).edgesIgnoringSafeArea(.all))
         .onAppear {
             // Refresh bookmarks when the view appears
             bookmarkManager.loadBookmarks()

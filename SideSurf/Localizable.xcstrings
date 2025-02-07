@@ -6,7 +6,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "About WebSidebar"
+            "value" : "About SideSurf"
           }
         }
       }
@@ -36,7 +36,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "WebSidebar"
+            "value" : "SideSurf"
           }
         }
       }
@@ -177,7 +177,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Thanks for using WebSidebar!"
+            "value" : "Thanks for using SideSurf!"
           }
         }
       }
@@ -197,7 +197,7 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Toggle WebSidebar"
+            "value" : "Toggle SideSurf Sidebar"
           }
         }
       }

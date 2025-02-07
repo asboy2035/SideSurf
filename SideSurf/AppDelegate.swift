@@ -79,7 +79,6 @@ struct FloatingWebSidebarButtonView: View {
                 .background(VisualEffectView(material: .hudWindow, blendingMode: .behindWindow))
                 .clipShape(Circle())
         }
-        .pointerStyle(.link)
         .buttonStyle(PlainButtonStyle())
     }
 }

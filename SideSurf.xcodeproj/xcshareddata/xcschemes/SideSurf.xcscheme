@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-               BuildableName = "WebSidebar.app"
-               BlueprintName = "WebSidebar"
-               ReferencedContainer = "container:WebSidebar.xcodeproj">
+               BuildableName = "SideSurf.app"
+               BlueprintName = "SideSurf"
+               ReferencedContainer = "container:SideSurf.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,9 +36,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EDE60CE2D034D6B00B723E1"
-               BuildableName = "WebSidebarTests.xctest"
-               BlueprintName = "WebSidebarTests"
-               ReferencedContainer = "container:WebSidebar.xcodeproj">
+               BuildableName = "SideSurfTests.xctest"
+               BlueprintName = "SideSurfTests"
+               ReferencedContainer = "container:SideSurf.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,9 +47,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "5EDE60D82D034D6B00B723E1"
-               BuildableName = "WebSidebarUITests.xctest"
-               BlueprintName = "WebSidebarUITests"
-               ReferencedContainer = "container:WebSidebar.xcodeproj">
+               BuildableName = "SideSurfUITests.xctest"
+               BlueprintName = "SideSurfUITests"
+               ReferencedContainer = "container:SideSurf.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -69,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-            BuildableName = "WebSidebar.app"
-            BlueprintName = "WebSidebar"
-            ReferencedContainer = "container:WebSidebar.xcodeproj">
+            BuildableName = "SideSurf.app"
+            BlueprintName = "SideSurf"
+            ReferencedContainer = "container:SideSurf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -86,9 +86,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "5EDE60BD2D034D6900B723E1"
-            BuildableName = "WebSidebar.app"
-            BlueprintName = "WebSidebar"
-            ReferencedContainer = "container:WebSidebar.xcodeproj">
+            BuildableName = "SideSurf.app"
+            BlueprintName = "SideSurf"
+            ReferencedContainer = "container:SideSurf.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
