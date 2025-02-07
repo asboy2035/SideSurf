@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5EAD088A2D56554000944328 /* Luminare in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD08892D56554000944328 /* Luminare */; };
+		5EAD098C2D566AD800944328 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD098B2D566AD800944328 /* LaunchAtLogin */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		5EDE60D02D034D6B00B723E1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +57,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EAD098C2D566AD800944328 /* LaunchAtLogin in Frameworks */,
+				5EAD088A2D56554000944328 /* Luminare in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +119,8 @@
 			);
 			name = WebSidebar;
 			packageProductDependencies = (
+				5EAD08892D56554000944328 /* Luminare */,
+				5EAD098B2D566AD800944328 /* LaunchAtLogin */,
 			);
 			productName = WebSidebar;
 			productReference = 5EDE60BE2D034D6900B723E1 /* WebSidebar.app */;
@@ -195,6 +204,10 @@
 			);
 			mainGroup = 5EDE60B52D034D6900B723E1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5EAD08882D56554000944328 /* XCRemoteSwiftPackageReference "Luminare" */,
+				5EAD098A2D566AD800944328 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5EDE60BF2D034D6900B723E1 /* Products */;
 			projectDirPath = "";
@@ -328,6 +341,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -384,6 +398,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
@@ -549,6 +564,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5EAD08882D56554000944328 /* XCRemoteSwiftPackageReference "Luminare" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MrKai77/Luminare?tab=readme-ov-file";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		5EAD098A2D566AD800944328 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sindresorhus/LaunchAtLogin-Modern";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5EAD08892D56554000944328 /* Luminare */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EAD08882D56554000944328 /* XCRemoteSwiftPackageReference "Luminare" */;
+			productName = Luminare;
+		};
+		5EAD098B2D566AD800944328 /* LaunchAtLogin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5EAD098A2D566AD800944328 /* XCRemoteSwiftPackageReference "LaunchAtLogin-Modern" */;
+			productName = LaunchAtLogin;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5EDE60B62D034D6900B723E1 /* Project object */;
 }

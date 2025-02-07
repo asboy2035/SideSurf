@@ -10,42 +10,35 @@ import WebKit
 
 struct SidebarView: View {
     @StateObject private var browserModel = BrowserModel()
+    @StateObject private var historyManager = HistoryManager()
+    @StateObject private var bookmarkManager = BookmarkManager()
     let isFirstLoad: Bool
     
     var body: some View {
         VStack(spacing: 0) {
-            // Address Bar
             AddressBarView(browserModel: browserModel)
-                .background(Color.clear)
+                .padding()
             
-            // Tab Bar
             TabBarView(browserModel: browserModel)
-                .background(Color.clear)
+                .padding([.horizontal, .bottom])
             
-            // Web View Container
-            WebView(browserModel: browserModel,
-                    preventReload: !isFirstLoad)
+            if let selectedTab = browserModel.selectedTab,
+               selectedTab.urlString == "about:startpage" {
+                StartPageView(
+                    browserModel: browserModel,
+                    bookmarkManager: bookmarkManager,
+                    historyManager: historyManager
+                )
+            } else {
+                WebView(
+                    browserModel: browserModel,
+                    historyManager: historyManager,
+                    preventReload: !isFirstLoad
+                )
                 .background(Color.clear)
+            }
         }
         .background(VisualEffectView(material: .sidebar, blendingMode: .behindWindow).edgesIgnoringSafeArea(.all))
-    }
-}
-
-struct VisualEffectView: NSViewRepresentable {
-    let material: NSVisualEffectView.Material
-    let blendingMode: NSVisualEffectView.BlendingMode
-    
-    func makeNSView(context: Context) -> NSVisualEffectView {
-        let visualEffectView = NSVisualEffectView()
-        visualEffectView.material = material
-        visualEffectView.blendingMode = blendingMode
-        visualEffectView.state = .active
-        return visualEffectView
-    }
-    
-    func updateNSView(_ visualEffectView: NSVisualEffectView, context: Context) {
-        visualEffectView.material = material
-        visualEffectView.blendingMode = blendingMode
     }
 }
 
@@ -55,7 +48,7 @@ struct AddressBarView: View {
     
     var body: some View {
         HStack {
-            TextField("Enter URL", text: $browserModel.currentURL) {
+            TextField("enterUrlLabel", text: $browserModel.currentURL) {
                 browserModel.loadURL()
             }
             .textFieldStyle(PlainTextFieldStyle())
@@ -73,7 +66,6 @@ struct AddressBarView: View {
             }
             .buttonStyle(PlainButtonStyle())
         }
-        .padding()
     }
 }
 
@@ -98,7 +90,6 @@ struct TabBarView: View {
                 .buttonStyle(PlainButtonStyle())
             }
         }
-        .padding()
     }
 }
 
@@ -137,15 +128,13 @@ class CustomWebView: WKWebView {
 
 struct WebView: NSViewRepresentable {
     @ObservedObject var browserModel: BrowserModel
+    @ObservedObject var historyManager: HistoryManager
     let preventReload: Bool
     
     func makeNSView(context: Context) -> CustomWebView {
         let webView = CustomWebView()
         webView.navigationDelegate = context.coordinator
-        
-        // Set a modern User-Agent string
         webView.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.0.0 Safari/537.36"
-        
         return webView
     }
     
@@ -155,9 +144,6 @@ struct WebView: NSViewRepresentable {
             return
         }
         
-        // Only reload if:
-        // 1. The URL has actually changed
-        // 2. We're not preventing reloads OR this is a new URL
         let urlHasChanged = nsView.lastLoadedURL != selectedTab.urlString
         if urlHasChanged && (!preventReload || nsView.lastLoadedURL == nil) {
             nsView.load(URLRequest(url: url))
@@ -177,7 +163,6 @@ struct WebView: NSViewRepresentable {
         }
         
         func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
-            // Fetch and update the tab title
             webView.evaluateJavaScript("document.title") { [weak self] result, error in
                 guard let self = self, error == nil, let title = result as? String else {
                     return
@@ -185,6 +170,9 @@ struct WebView: NSViewRepresentable {
                 
                 DispatchQueue.main.async {
                     self.parent.browserModel.updateCurrentTabTitle(title)
+                    if let urlString = webView.url?.absoluteString {
+                        self.parent.historyManager.addItem(url: urlString, title: title)
+                    }
                 }
             }
         }

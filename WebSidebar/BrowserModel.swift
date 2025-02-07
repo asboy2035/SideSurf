@@ -20,10 +20,11 @@ class BrowserModel: ObservableObject {
     @Published var currentURL: String = ""
     
     init() {
-        addNewTab(url: "https://www.google.com")
+        // Initialize with a blank tab for the start page
+        addNewTab(url: "about:startpage")
     }
     
-    func addNewTab(url: String = "https://") {
+    func addNewTab(url: String = "about:startpage") {
         let newTab = BrowserTab(urlString: url, title: "New Tab")
         tabs.append(newTab)
         selectTab(newTab)
@@ -70,5 +71,12 @@ class BrowserModel: ObservableObject {
             tabs[index] = selectedTab
             self.selectedTab = selectedTab
         }
+    }
+}
+
+extension BrowserModel {
+    func loadSpecificURL(_ url: String) {
+        currentURL = url
+        loadURL()
     }
 }
