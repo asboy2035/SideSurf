@@ -1,5 +1,6 @@
 # SideSurf
 > In development.
+
 Browser sidebar for macOS!
 
 <img width="763" alt="SCR-20250303-qiuy" src="https://github.com/user-attachments/assets/62907328-fe41-467c-88e6-5bcb41ab6b18" />
