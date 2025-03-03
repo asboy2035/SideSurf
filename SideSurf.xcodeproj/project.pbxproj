@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5E196F592D56731000AD4AC8 /* SideSurfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */; };
+		5E4B06D12D5678F000203123 /* UpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E4B06D02D5678F000203123 /* UpdateView.swift */; };
 		5EAD088A2D56554000944328 /* Luminare in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD08892D56554000944328 /* Luminare */; };
 		5EAD098C2D566AD800944328 /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = 5EAD098B2D566AD800944328 /* LaunchAtLogin */; };
 		5EAD09C72D5671C600944328 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 5EAD09C02D5671C600944328 /* Localizable.xcstrings */; };
@@ -48,6 +49,7 @@
 		5E196F552D56725100AD4AC8 /* SideSurfUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SideSurfUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E196F572D5672F400AD4AC8 /* SideSurf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SideSurf.entitlements; sourceTree = "<group>"; };
 		5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideSurfApp.swift; sourceTree = "<group>"; };
+		5E4B06D02D5678F000203123 /* UpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateView.swift; sourceTree = "<group>"; };
 		5EAD09B62D5671C600944328 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5EAD09B82D5671C600944328 /* AboutWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutWindowController.swift; sourceTree = "<group>"; };
 		5EAD09B92D5671C600944328 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		5E196F562D5672D800AD4AC8 /* SideSurf */ = {
 			isa = PBXGroup;
 			children = (
+				5E4B06D02D5678F000203123 /* UpdateView.swift */,
 				5E196F582D56730C00AD4AC8 /* SideSurfApp.swift */,
 				5E196F572D5672F400AD4AC8 /* SideSurf.entitlements */,
 				5EAD09B72D5671C600944328 /* Preview Content */,
@@ -275,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EAD09CA2D5671C600944328 /* AboutWindowController.swift in Sources */,
+				5E4B06D12D5678F000203123 /* UpdateView.swift in Sources */,
 				5EAD09CB2D5671C600944328 /* ContentView.swift in Sources */,
 				5EAD09CC2D5671C600944328 /* BrowserModel.swift in Sources */,
 				5EAD09CD2D5671C600944328 /* HistoryView.swift in Sources */,
@@ -444,11 +448,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SideSurf/SideSurf.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SideSurf/Preview Content\"";
-				DEVELOPMENT_TEAM = UCN29PZL3V;
+				DEVELOPMENT_TEAM = 9XCKWAKCP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -474,11 +479,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = SideSurf/SideSurf.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SideSurf/Preview Content\"";
-				DEVELOPMENT_TEAM = UCN29PZL3V;
+				DEVELOPMENT_TEAM = 9XCKWAKCP6;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;

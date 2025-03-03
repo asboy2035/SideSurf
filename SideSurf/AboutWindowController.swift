@@ -180,7 +180,7 @@ struct AboutContentView: View {
         .toolbar {
             ToolbarItem(placement: .automatic) {
                 Button(action: {
-                    if let url = URL(string: "https://asboy2035.pages.dev/apps/stand") {
+                    if let url = URL(string: "https://asboy2035.pages.dev/apps") {
                         NSWorkspace.shared.open(url)
                     }
                 }) {
